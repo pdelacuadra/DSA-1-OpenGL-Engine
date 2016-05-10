@@ -1,8 +1,2 @@
-﻿  Engine.cpp
-j:\dsa\pd1876engine\pd1876engine\engine.cpp(10): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
-j:\dsa\pd1876engine\pd1876engine\engine.cpp(15): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
-  Generating Code...
-  Skipping... (no relevant changes detected)
-  main.cpp
-LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
-  pd1876Engine.vcxproj -> J:\DSA\pd1876Engine\Debug\pd1876Engine.exe
+﻿  Model.cpp
+  pd1876Engine.vcxproj -> E:\DSA\pd1876Engine\Debug\pd1876Engine.exe

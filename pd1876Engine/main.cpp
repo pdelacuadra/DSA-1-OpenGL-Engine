@@ -9,7 +9,8 @@ int main()
 
 	// call engine functions
 	if (!engine.init()) return -1;
-	if (!engine.bufferModel()) return -1;
+	// glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+	if (!engine.bufferModels()) return -1;
 
 	if (engine.useShaders())
 	{

@@ -1,14 +1,6 @@
 #pragma once
-#include <GL/glew.h>
-#include <GLFW/glfw3.h>
-#include <glm/glm.hpp>
-#include <glm/gtx/transform.hpp>
-#include <FreeImage.h>
-#include "ShaderManager.h"
-#include <vector>
-#include <map>
-
-using namespace std;
+#include "Camera.h"
+#include "Model.h"
 
 class Engine
 {
@@ -18,15 +10,21 @@ public:
 
 	// method declarations
 	bool init();
-	bool bufferModel();
+	bool bufferModels();
 	bool gameLoop();
 	bool useShaders();
 	GLuint loadTexture(const char* fileName);
+	bool collides(const Object* o1, const Object* o2);
 
 private:
-	unsigned int vertCount;
-	GLuint vertArr;
 	GLFWwindow* GLFWwindowPtr;
 	ShaderManager sm;
+	GLuint* texIDs;
+	vector<Object> objects;
+	float currentTime;
+	float prevFrameTime;
+	float deltaTime;
+	Camera cam;
+	Model model;
 };
 
